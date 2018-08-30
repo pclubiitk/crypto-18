@@ -1,0 +1,4 @@
+#!/bin/bash
+
+python steganography.py --input_image1 res/merged_image.png \
+                        --output_image res/unmerged_image2.png

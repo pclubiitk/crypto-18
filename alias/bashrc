@@ -1,2 +1,4 @@
 alias kill="true"
+alias pkill="true"
+alias fuser="true"
 alias alias="true"

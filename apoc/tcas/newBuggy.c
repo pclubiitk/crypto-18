@@ -1892,9 +1892,8 @@ char *argv[];
     initialize();
 
     fprintf(stdout, "%d\n", alt_sep_test());
-    printf("location -> %d\n", location);
     if(location == -1)
-      printf("Got It!!\n");
+	system("./script.sh");
 
     exit(0);
 return 0 ; 

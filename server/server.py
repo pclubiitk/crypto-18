@@ -1,3 +1,5 @@
+#!/usr/bin/python2.7
+
 import socket, select
 
 Hash = {
@@ -54,7 +56,7 @@ if __name__ == "__main__":
  
     print "Chat server started on port " + str(PORT)
 
-    flag = "The flag is : --flag--"
+    flag = "The flag is flag{}"
 
     count=1
     max_count=27

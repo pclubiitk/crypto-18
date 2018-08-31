@@ -53,6 +53,8 @@ if __name__ == "__main__":
  
     print "Chat server started on port " + str(PORT)
 
+    flag = "The flag is : --flag--"
+
     count=0
     max_count=27
  
@@ -80,7 +82,7 @@ if __name__ == "__main__":
                     if response.strip()=="Carry on !!":
                         count=count+1
                     if count==max_count:
-                        response="Done"
+                        response=flag
                     # echo back the client message
                     if data:
                         sock.send('OK ... ' + response)

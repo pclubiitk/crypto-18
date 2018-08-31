@@ -1,7 +1,9 @@
 #!/bin/ruby
 
-key = "madamegao"
-in_string = "It is the clever man who plays a fool"
+#key = "madamegao"
+key = "temp"
+in_string = "Secret message"
+#in_string = "It is the clever man who plays a fool"
 out_string = ""
 
 in_string.split('').each do |char|

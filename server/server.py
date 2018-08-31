@@ -1,12 +1,33 @@
 import socket, select
 
 Hash = {
-        "0":"A",
-        "1":"B",
-        "2":"C",
-        "3":"D",
-        "4":"E",
-        "5":"F"
+        "1":"Iron Man",
+        "2":"Iron Man 2",
+        "3":"The Incredible Hulk",
+        "4":"Thor",
+        "5":"Captain America: The First Avenger",
+        "6":"The Avengers",
+        "7":"Iron Man 3",
+        "8":"Agents of S.H.I.E.L.D.",
+        "9":"Thor: The Dark World",
+        "10":"Captain America: The Winter Soldier",
+        "11":"Guardians of the Galaxy",
+        "12":"Guardians of the Galaxy Vol. 2",
+        "13":"Daredevil",
+        "14":"Avengers: Age of Ultron",
+        "15":"Ant-Man",
+        "16":"Jessica Jones",
+        "17":"Doctor Strange",
+        "18":"Luke Cage",
+        "19":"Captain America: Civil War",
+        "20":"Black Panther",
+        "21":"Spider-Man: Homecoming",
+        "22":"Iron Fist",
+        "23":"The Defenders",
+        "24":"The Punisher",
+        "25":"Inhumans",
+        "26":"Thor: Ragnarok",
+        "27":"Avengers: Infinity War",
         }
 
 def func(data, count):
@@ -33,7 +54,7 @@ if __name__ == "__main__":
     print "Chat server started on port " + str(PORT)
 
     count=0
-    max_count=5
+    max_count=27
  
     while 1:
         # Get the list sockets which are ready to be read through select

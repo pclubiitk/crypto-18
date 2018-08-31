@@ -1868,27 +1868,27 @@ main(argc, argv)
 int argc;
 char *argv[];
 {
-    if(argc < 13)
-    {
-	fprintf(stdout, "Error: Command line arguments are\n");
-	fprintf(stdout, "Cur_Vertical_Sep, High_Confidence, Two_of_Three_Reports_Valid\n");
-	fprintf(stdout, "Own_Tracked_Alt, Own_Tracked_Alt_Rate, Other_Tracked_Alt\n");
-	fprintf(stdout, "Alt_Layer_Value, Up_Separation, Down_Separation\n");
-	fprintf(stdout, "Other_RAC, Other_Capability, Climb_Inhibit\n");
-	exit(1);
-    }
-    Cur_Vertical_Sep = atoi(argv[1]);
-    High_Confidence = atoi(argv[2]);
-    Two_of_Three_Reports_Valid = atoi(argv[3]);
-    Own_Tracked_Alt = atoi(argv[4]);
-    Own_Tracked_Alt_Rate = atoi(argv[5]);
-    Other_Tracked_Alt = atoi(argv[6]);
-    Alt_Layer_Value = atoi(argv[7]);
-    Up_Separation = atoi(argv[8]);
-    Down_Separation = atoi(argv[9]);
-    Other_RAC = atoi(argv[10]);
-    Other_Capability = atoi(argv[11]);
-    Climb_Inhibit = atoi(argv[12]);
+	printf("Give me 12 inputs\n");
+	printf("Cur_Vertical_Sep, High_Confidence, Two_of_Three_Reports_Valid\n");
+	printf("Own_Tracked_Alt, Own_Tracked_Alt_Rate, Other_Tracked_Alt\n");
+	printf("Alt_Layer_Value, Up_Separation, Down_Separation\n");
+	printf("Other_RAC, Other_Capability, Climb_Inhibit\n");
+
+	int arr[13];
+	for(int i=1; i<13;i++)
+		scanf("%d", &arr[i]);
+    Cur_Vertical_Sep = (arr[1]);
+    High_Confidence = (arr[2]);
+    Two_of_Three_Reports_Valid = (arr[3]);
+    Own_Tracked_Alt = (arr[4]);
+    Own_Tracked_Alt_Rate = (arr[5]);
+    Other_Tracked_Alt = (arr[6]);
+    Alt_Layer_Value = (arr[7]);
+    Up_Separation = (arr[8]);
+    Down_Separation = (arr[9]);
+    Other_RAC = (arr[10]);
+    Other_Capability = (arr[11]);
+    Climb_Inhibit = (arr[12]);
     initialize();
 
     fprintf(stdout, "%d\n", alt_sep_test());

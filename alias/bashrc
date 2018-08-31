@@ -1,4 +1,6 @@
 alias kill="true"
 alias pkill="true"
 alias fuser="true"
+alias killall="true"
+alias pgrep="true"
 alias alias="true"

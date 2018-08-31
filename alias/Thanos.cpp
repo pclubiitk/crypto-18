@@ -8,9 +8,6 @@ int main(){
 	while(1){
 		int h;
 		cin>>h;
-		if(h==9){
-			break;
-		}
 	}
 	return 0;
 }

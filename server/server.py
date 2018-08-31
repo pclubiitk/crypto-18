@@ -34,7 +34,8 @@ def func(data, count):
     if Hash[str(count)] == data.strip():
         return "Carry on !!\n"
     else:
-        return Hash[str(count)]+"| and |"+data+"| -ve\n"
+        return data
+        #return Hash[str(count)]
   
 if __name__ == "__main__":
       
@@ -55,7 +56,7 @@ if __name__ == "__main__":
 
     flag = "The flag is : --flag--"
 
-    count=0
+    count=1
     max_count=27
  
     while 1:
@@ -74,7 +75,7 @@ if __name__ == "__main__":
             #Some incoming message from a client
             else:
                 # Data recieved from client, process it
-                try:
+                #try:
                     #In Windows, sometimes when a TCP program closes abruptly,
                     # a "Connection reset by peer" exception will be thrown
                     data = sock.recv(RECV_BUFFER)
@@ -88,11 +89,11 @@ if __name__ == "__main__":
                         sock.send('OK ... ' + response)
                  
                 # client disconnected, so remove from socket list
-                except:
+                #except:
                     #broadcast_data(sock, "Client (%s, %s) is offline" % addr)
-                    print "Client (%s, %s) is offline" % addr
-                    sock.close()
-                    CONNECTION_LIST.remove(sock)
-                    continue
+                    #print "Client (%s, %s) is offline" % addr
+                    #sock.close()
+                    #CONNECTION_LIST.remove(sock)
+                    #continue
          
     server_socket.close()

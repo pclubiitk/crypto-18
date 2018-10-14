@@ -1,0 +1,16 @@
+<!doctype html>
+<head>
+  <title>What do you want?</title>
+</head>
+<body>
+  <form name = "main" action = "/" method = "post">
+    where to?: <br> <input type = "text" name = "in_string" />
+    <br>
+    <input type = "submit" value = "Send">
+  </form>
+  <p>
+    Status:
+    {{ query }}
+  </p>
+</body>
+</html>

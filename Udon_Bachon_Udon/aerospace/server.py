@@ -37,8 +37,8 @@ def query():
         if is_email(in_string) == True:
            thr = Thread(target=send_async_email, args=[in_string])
            thr.start()
-           return render_template("index.html", status = "Sent")
+           return render_template("index.html", query = "Sent")
         else:
-           return render_template("index.html", status = "Try Again!")
+           return render_template("index.html", query = "Try Again!")
     else:
         return render_template("index.html")

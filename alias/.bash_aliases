@@ -1,6 +1,0 @@
-alias kill="true"
-alias pkill="true"
-alias fuser="true"
-alias killall="true"
-alias source="true"
-alias alias="true"

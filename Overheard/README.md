@@ -11,7 +11,5 @@ You need to decode this fast and give this to Captain America before Captain Com
 
 Files\_shared -> *over_heard.wav*
 
-## Setup
-
 ## Solution
 
